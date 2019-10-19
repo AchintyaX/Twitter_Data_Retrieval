@@ -5,11 +5,11 @@ import sys # to take arguments from the terminal
 
 # setting up the api keys for the twitter api 
 
-consumer_key = '4LZh8tlui4hy0FiBc0El7Mh19' 
-consumer_secret = 'ImOmm5sm2wUBaBoTVSFDPAEH1LPlmqaPIkua8d3PNscYZw0mFA'
+consumer_key = '' 
+consumer_secret = ''
 
-access_token = '1114502658507730945-607tyGyU0eHitRxasTR64lczyX3kff'
-access_secret = 'sDEMuCVT3l93FuTfCCI0YEqnmYSDAr2hnm2vWip3lZqkc'
+access_token = ''
+access_secret = ''
 
 # handling the authentication process of the twitter api
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
@@ -85,5 +85,8 @@ def retrieve_tweets(DATA_DIR, OUT_DIR_JSON ):
 	tweet_data.to_json(path_or_buf=OUT_DIR_JSON, orient='table')
 
 
+
 # retrieve_tweets(DATA_DIR, OUT_DIR, OUT_DIR_JSON)
+    
+retrieve_tweets(DATA_DIR, OUT_DIR)
     

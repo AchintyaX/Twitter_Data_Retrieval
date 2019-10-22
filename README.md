@@ -8,6 +8,9 @@ output_file - file containing the final data about the tweets retrieved
 1. Tweepy
 2. Pandas 
 3. sys 
+# TWITTER API KEYS 
+To use the script one needs to generate the keys to the twitter API, after a filling a set of questions you would get a consumer key and an Access Token 
+link to the developer page is [here](https://developer.twitter.com/en/apply)
 
 # MOTIVATION 
 

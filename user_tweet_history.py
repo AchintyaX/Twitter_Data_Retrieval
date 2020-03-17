@@ -8,13 +8,14 @@ import json
 
 # declaring  the credentials  
 
-consumer_key = '4LZh8tlui4hy0FiBc0El7Mh19' 
-consumer_secret = 'ImOmm5sm2wUBaBoTVSFDPAEH1LPlmqaPIkua8d3PNscYZw0mFA'
+consumer_key = '' 
+consumer_secret = ''
 
-access_token = '1114502658507730945-607tyGyU0eHitRxasTR64lczyX3kff'
-access_secret = 'sDEMuCVT3l93FuTfCCI0YEqnmYSDAr2hnm2vWip3lZqkc'
+access_token = ''
+access_secret = ''
 
 # handling the authentication process of the twitter api 
+
 
 api = login(consumer_key, consumer_secret, access_token, access_secret)
 

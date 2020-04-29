@@ -28,7 +28,7 @@ def get_id(filepath):
 	df = pd.read_json(filepath, lines=True)
 	return df.id.to_list()
 
-user_ids = get_id(filepath)
+user_ids = get_id(DATA_DIR)
 
 
 # retrieving the user tweets and storing them in a jsonstream file 
@@ -51,7 +51,7 @@ for i in user_ids:
 			tweet['user_mentions'] = len(obj['entities']['user_mentions'])
 			data[i].append(tweet)
 		j = json.dumps(data)
-		f = open("dict.jsonstream", 'a')
+		f = open(OUT_DIR_JSON, 'a')
 		f.write(j)
 		f.close()
 		print("no. of tweets of the user",len(data[i]))
